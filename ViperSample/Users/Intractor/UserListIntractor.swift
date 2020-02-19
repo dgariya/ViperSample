@@ -15,7 +15,6 @@ class UserListIntractor: UserListUseCase {
         NetworkClient().request(endPoint: .fetch(path: Constants.Path.userList, queryItems: nil)) { (result: Result<[User]>) in
             switch result {
             case .success(let userList):
-                print(userList.count)
                 self.output.userListFetched(userList: userList)
             case .failure(let error):
                 self.output.userListFailed(errorDescription: error)

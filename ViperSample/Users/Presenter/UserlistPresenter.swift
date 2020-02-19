@@ -6,8 +6,6 @@
 //  Copyright © 2020 Singh, Dev. All rights reserved.
 //
 
-import Foundation
-
 class UserlistPresenter: UserListPresentation {
     
     weak var view: UserListView?
